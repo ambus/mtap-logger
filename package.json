@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/darekf77/ng2-logger.git"
   },
+  "scripts": {
+    "build-library": "npm run build-webpack",
+    "build-webpack": "webpack"
+  },
   "tnp": {
     "type": "isomorphic-lib",
     "resources": [
@@ -35,9 +39,12 @@
     "@ngtools/webpack": "^1.9.3",
     "@types/node": "^9.3.0",
     "isomorphic-region-loader": "0.0.1",
+    "ts-loader": "^4.4.1",
     "tslib": "^1.8.1",
     "typescript": "^2.6.2",
-    "webpack": "^3.10.0"
+    "uglifyjs-webpack-plugin": "^1.2.6",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
   },
   "readmeFilename": "README.md",
   "dependencies": {
